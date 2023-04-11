@@ -1,0 +1,17 @@
+Java Selenium'da explicitlyWait ve implicitlyWait arasındaki fark, 
+beklemenin ne zaman başlayacağına ve hangi koşullara bağlı olduğuna bağlıdır.
+implicitlyWait yöntemi, web sayfasını yüklerken ve öğeleri bulurken kullanılan 
+varsayılan bekleme süresini belirler. Yani, bir öğe aranırken, 
+Selenium varsayılan olarak belirtilen süre boyunca sayfada öğeyi arar ve 
+öğe belirtilen süre içinde bulunmazsa, NoSuchElementException hatası fırlatılır. 
+Bu bekleme süresi, tüm öğeler için geçerlidir. Öte yandan, explicitlyWait yöntemi, 
+belirli bir koşula göre öğelerin yüklenmesini beklemek için kullanılır. 
+Bu yöntem, öğelerin yüklenmesi için belirli bir koşulun karşılanmasını 
+bekler ve bu koşul gerçekleşirse, öğe kullanılabilir hale gelir. 
+Örneğin, bir düğmeye tıklamadan önce sayfanın yüklenmesini bekleyebilirsiniz.
+Bu yöntemde, belirli bir öğe veya koşul için bekleme süresi, 
+implicitlyWait'tan farklı olarak öğeye özeldir.Sonuç olarak, 
+implicitlyWait yöntemi, tüm öğelerin yüklenmesi için bir varsayılan
+bekleme süresi belirlerken, explicitlyWait yöntemi belirli bir koşulun 
+gerçekleşmesini bekler ve bu koşulun gerçekleşmesi için öğeye özel 
+bir bekleme süresi belirler.
